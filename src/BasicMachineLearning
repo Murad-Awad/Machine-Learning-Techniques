@@ -1,0 +1,8 @@
+from sklearn import tree
+features = [[140, 1], [130,1], [150, 0], [170, 0]]
+#first feature is weight, second is smoothness being represented as a numerical bool
+#labels are as follows 0 : orange   1 : apple
+labels = [0,0,1,1]
+clf = tree.DecisionTreeClassifier()
+clf = clf.fit(features, labels)
+print clf.predict([[150,0]])
