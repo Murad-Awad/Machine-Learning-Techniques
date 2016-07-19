@@ -19,3 +19,4 @@ classifier2.fit(X_train, Y_train)
 predictions = classifier2.predict(X_test)
 from sklearn.metrics import accuracy_score
 print accuracy_score(Y_test, predictions)
+#the point of this is to show that using different classifiers you will get around the same results, from a high level they are pretty similar
